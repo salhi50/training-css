@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  /* font-family: 'Noto Kufi Arabic', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #161c20;
+  overflow-y: auto;
+  -webkit-tap-highlight-color: transparent;
+  font-weight: 400;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+.shadow {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* variables */
+
+:root {
+  --main-transition: 0.2s;
+  --dark-blue-color: #0875d5;
+  --bg-footer-black: #161c20;
+  --bg-facebook: #3b5998;
+  --border-input: #cad0d5;
+  --gradient-overlay: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  --relax-green: #29c187;
+  --shadow-btn: 0 6px 25px -25px #000;
+  --light-yellow: #fcfcc5;
+  --light-green: #d9eee1;
+  --light-red: #fcbcc3;
+  --light-bleu: #bcdbfc;
+  --red-danger: #d12727;
+}
+
+
+
+.scroll{
+  height: 40px;
+  cursor: pointer;
+  width: 40px;
+  background: #0f8cfa;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 50%;
+}
+/* content */
+
+
+/* <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<polygon points="22.5,7.4 21.3,6.2 12,15.4 2.7,6.2 1.5,7.4 12,17.8 12,17.8 12,17.8 "/>
+</svg> */
+
+/* data:image/svg+xml;utf8, */
+
+
+/* 
+grey for reading
+ = color: #4d5156;
+
+*/
+
+/* advices */
+
+/* 
+
+--create my own icons
+--create a switch
+
+*/
+
+
+
+/* 
+
+// websites for create 
+
+    --validate form
+    --randome items
+    --lesson page
+    --converting page
+    --social website
+    --webpage with javascript{
+      boxes with images and title informations and a simple form
+    }
+    --to do list
+    --ecomerce website
+    --dashboard
+  
+*/
+
+/* myRandom */
+
+/* 
+
+// variables
+let myBtn = document.getElementById("clickme");
+let myhide = document.getElementById("hideme");
+
+// array
+
+let arrayImages = [
+    "anass.jpg",
+    "anwar.jpg",
+    "asla.jpg",
+    "brahim.jpg",
+    "hard.jpg",
+    "nabil.jpg",
+    "mehdi.jpg",
+    "outaiss.jpg",
+    "younes.jpg"
+]
+
+myBtn.onclick = function(){
+    var mytest =  setInterval(inter,500);
+    myhide.onclick = function(){
+        clearInterval(mytest);
+    }
+}
+
+function inter(){
+    let randomizing = arrayImages[Math.floor(Math.random() * arrayImages.length)];
+    let myImg = document.getElementById("myImg");
+    myImg.setAttribute("src",`image/${randomizing}`);
+}
+
+
+
+
+*/
+
+/* my code validate */
+
+/* 
+
+
+four.onkeydown = function(){
+    if(four.value.length === 0){
+        setTimeout(() => {
+            four.blur();
+            btn.click();
+        }, 100);
+    }
+}
+*/
+
+input{
+  margin: 0 5px !important;
+  width: 30px;
+  height: 30px;
+}
+
+.cloned.boom{
+  background: #0f8caf;
+  color: white;
+}
+
+/* 
+
+gap 16px
+
+3 columns
+
+2rows
+
+
+
+*/
+
+
+article .list-ctrl{
+  grid-template-columns: repeat(3,1fr);
+  gap: 18px;
+  grid-auto-rows: auto;
+}
+
+
+@media (max-width: 800px) {
+  article .list-ctrl{
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 18px;
+    column-gap: 0;
+  }
+  .list-ctrl .item:nth-child(2){
+    grid-column: span 1 !important;
+  }
+}
+
+.progress::before {
+  position: absolute;
+  background: #42a1f5;
+  width: 90%;
+  height: 100%;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+}
+.css::before{
+  width: 80%;
+}
+.js::before{
+  width: 30%;
+}
+.mark::before{
+  width: 40%;
+}
+.fr::before{
+  width: 55%;
+}
+.ar::before{
+  width: 85%;
+}
+.de::before{
+  width: 8%;
+}
+.en::before{
+  width: 33%;
+}
+.progress{
+  background-color: rgb(227, 227, 227);
+}
+.profil a:hover{
+  background: #fff;
+  color: #161c20;
+}
+.profil a:active{
+  background: #fff;
+  color: #161c20;
+}
+
+/* start footer */
+
+footer{
+  background: var(--bg-footer-black);
+}
+footer .social{
+  padding: 10px 0;
+  border-bottom: 1px solid #242426;
+}
+footer .social i{
+  padding: 0 10px;
+  font-size: 23px;
+}
+/* end footer */
